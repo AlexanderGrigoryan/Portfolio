@@ -1,12 +1,16 @@
 import "./App.css";
 import styled from "styled-components";
 import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   return (
     <div className="App">
       <MainContainer>
         <Header />
+        <AboutMe />
+        <ContactMe />
       </MainContainer>
     </div>
   );
