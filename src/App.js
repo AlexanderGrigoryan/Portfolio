@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <AboutMe />
         <ContactMe />
       </MainContainer>
+      <Footer />
     </div>
   );
 }

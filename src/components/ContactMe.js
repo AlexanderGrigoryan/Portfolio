@@ -36,4 +36,8 @@ const Button = styled.button`
   line-height: 14px;
   letter-spacing: 2px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  :hover {
+    background: #f8eded;
+  }
 `;

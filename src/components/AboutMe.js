@@ -37,6 +37,10 @@ export default AboutMe;
 
 const Container = styled.div`
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Image = styled.img`
@@ -59,6 +63,11 @@ const BlackButton = styled.button`
   display: flex;
   align-items: center;
   margin-top: 32px;
+  align-self: baseline;
+  transition: all 0.3s ease;
+  &:hover {
+    background: #244b67;
+  }
 `;
 
 const GreenArrows = styled.img`
@@ -85,6 +94,7 @@ const Title = styled.h1`
   letter-spacing: -0.3571428656578064px;
   color: #33323d;
   margin: 32px 0 28px;
+  align-self: baseline;
 `;
 
 const Text = styled.p`
@@ -103,6 +113,11 @@ const PortfolioButton = styled.button`
   line-height: 14px;
   letter-spacing: 2px;
   margin: 24px 0 51px;
+  align-self: baseline;
+  transition: all 0.3s ease;
+  :hover {
+    background: #f8eded;
+  }
 `;
 
 const Line = styled.div`
