@@ -65,7 +65,7 @@ const BlackButton = styled.button`
   margin-top: 32px;
   align-self: baseline;
   transition: all 0.3s ease;
-  :hover {
+  &:hover {
     background: #244b67;
   }
 `;

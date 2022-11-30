@@ -74,7 +74,7 @@ const Link = styled.a`
   letter-spacing: 2px;
   color: #ffffff;
   text-decoration: none;
-  :hover {
+  &:hover {
     text-decoration: underline;
   }
 `;
