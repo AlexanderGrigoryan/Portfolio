@@ -25,7 +25,7 @@ function Header() {
             <Link href="#">PORTFOLIO</Link>
           </MenuList>
           <MenuList>
-            <Link href="#">CONTANT ME</Link>
+            <Link href="#">CONTACT ME</Link>
           </MenuList>
         </Menu>
       ) : null}
