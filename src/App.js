@@ -1,8 +1,9 @@
 import "./App.css";
+import { Route, Routes, Link } from "react-router-dom";
 import styled from "styled-components";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 import Header from "./components/Header";
-import AboutMe from "./components/AboutMe";
-import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 
 function App() {
@@ -10,8 +11,10 @@ function App() {
     <div className="App">
       <MainContainer>
         <Header />
-        <AboutMe />
-        <ContactMe />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Projects />} />
+        </Routes>
       </MainContainer>
       <Footer />
     </div>
@@ -20,6 +23,6 @@ function App() {
 
 export default App;
 
-const MainContainer = styled.div`
-  padding: 32px 32px 0 32px;
+const MainContainer = styled.main`
+  padding: 32px 32px 0px 32px;
 `;

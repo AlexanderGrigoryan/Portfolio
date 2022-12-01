@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import logoWhite from "../img/logo-white.svg";
 import github from "../img/icons/footer-github.svg";
 import twitter from "../img/icons/footer-twitter.svg";
@@ -11,18 +12,18 @@ function Footer() {
         <Logo src={logoWhite} alt="logo"></Logo>
         <Menu>
           <MenuList>
-            <Link href="#" target="_blank" rel="noopener noreferrer">
-              HOME
+            <Link to="/">
+              <LinkInner>HOME</LinkInner>
             </Link>
           </MenuList>
           <MenuList>
-            <Link href="#" target="_blank" rel="noopener noreferrer">
-              PORTFOLIO
+            <Link to="/portfolio">
+              <LinkInner>PORTFOLIO</LinkInner>
             </Link>
           </MenuList>
           <MenuList>
-            <Link href="#" target="_blank" rel="noopener noreferrer">
-              CONTACT ME
+            <Link to="#">
+              <LinkInner>CONTACT ME</LinkInner>
             </Link>
           </MenuList>
         </Menu>
@@ -55,6 +56,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 56px 0;
+  margin-top: 80px;
   background: #33323d;
 `;
 
@@ -68,7 +70,7 @@ const FooterContainer = styled.div`
 
 const Logo = styled.img``;
 
-const Link = styled.a`
+const LinkInner = styled.span`
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 2px;
