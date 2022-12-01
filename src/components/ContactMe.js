@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-function ContactMe() {
+function ContactMe(props) {
   return (
     <Container>
-      <Title>Interested in doing a project together?</Title>
+      {props.children}
       <Button>CONTACT ME</Button>
     </Container>
   );
@@ -16,17 +16,8 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   row-gap: 40px;
-  margin: 115px 0 80px;
 `;
-const Title = styled.h2`
-  font-family: Ibarra Real Nova;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: -0.3571428656578064px;
-  text-align: center;
-  color: #33323d;
-`;
+
 const Button = styled.button`
   width: 162px;
   height: 48px;
@@ -37,7 +28,7 @@ const Button = styled.button`
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
-  :hover {
+  &:hover {
     background: #f8eded;
   }
 `;

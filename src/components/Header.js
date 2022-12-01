@@ -4,8 +4,6 @@ import close from "../img/icons/close.svg";
 import styled from "styled-components";
 import { useState } from "react";
 import { Route, Routes, Link } from "react-router-dom";
-import Home from "../pages/Home";
-import Projects from "../pages/Projects";
 
 function Header() {
   const [buttonClicked, setButtonClicked] = useState(false);
@@ -48,11 +46,15 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
 `;
+
 const Logo = styled.img``;
+
 const Button = styled.button`
   cursor: pointer;
 `;
+
 const Menu = styled.ul`
   list-style-type: none;
   background: #33323d;
@@ -66,6 +68,7 @@ const Menu = styled.ul`
   right: 32px;
   z-index: 100;
 `;
+
 const MenuList = styled.li``;
 
 const Links = styled.span`

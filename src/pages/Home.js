@@ -1,24 +1,27 @@
 import styled from "styled-components";
-import Header from "../components/Header";
 import AboutMe from "../components/AboutMe";
 import ContactMe from "../components/ContactMe";
-import Footer from "../components/Footer";
 
 function Home() {
   return (
     <div>
-      <MainContainer>
-        <Header />
-        <AboutMe />
-        <ContactMe />
-      </MainContainer>
-      <Footer />
+      <AboutMe />
+      <ContactMe>
+        <Title>Interested in doing a project together?</Title>
+      </ContactMe>
     </div>
   );
 }
 
 export default Home;
 
-const MainContainer = styled.div`
-  padding: 32px 32px 0 32px;
+const Title = styled.h2`
+  font-family: Ibarra Real Nova;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.3571428656578064px;
+  text-align: center;
+  margin-top: 115px;
+  color: #33323d;
 `;

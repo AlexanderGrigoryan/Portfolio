@@ -55,6 +55,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 56px 0;
+  margin-top: 80px;
   background: #33323d;
 `;
 

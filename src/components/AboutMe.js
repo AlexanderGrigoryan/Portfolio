@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Line from "./Line";
 import projectImage from "../img/homepage/mobile/image-homepage-hero.jpg";
 import greenarrows from "../img/icons/down-arrows.svg";
 import profile from "../img/homepage/mobile/profile.jpg";
@@ -36,7 +37,6 @@ function AboutMe() {
 export default AboutMe;
 
 const Container = styled.div`
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,11 +118,4 @@ const PortfolioButton = styled.button`
   :hover {
     background: #f8eded;
   }
-`;
-
-const Line = styled.div`
-  width: 311px;
-  height: 1px;
-  border: 1px solid #33323d;
-  opacity: 0.15;
 `;
