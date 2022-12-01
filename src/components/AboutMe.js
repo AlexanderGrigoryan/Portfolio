@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Line from "./Line";
 import projectImage from "../img/homepage/mobile/image-homepage-hero.jpg";
 import greenarrows from "../img/icons/down-arrows.svg";
@@ -28,7 +29,11 @@ function AboutMe() {
         out in nature whether that’s going for a walk, run or playing football.
         I’d love you to check out my work.
       </Text>
-      <PortfolioButton>GO TO PORTFOLIO</PortfolioButton>
+      <PortfolioButton>
+        <Link style={{ textDecoration: "none" }} to="/portfolio">
+          GO TO PORTFOLIO
+        </Link>
+      </PortfolioButton>
       <Line></Line>
     </Container>
   );

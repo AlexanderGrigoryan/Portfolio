@@ -24,5 +24,5 @@ function App() {
 export default App;
 
 const MainContainer = styled.main`
-  padding: 32px 32px 40px 32px;
+  padding: 32px 32px 0px 32px;
 `;
