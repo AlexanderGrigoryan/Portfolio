@@ -1,25 +1,18 @@
 import "./App.css";
+import { Route, Routes, Link } from "react-router-dom";
 import styled from "styled-components";
-import Header from "./components/Header";
-import AboutMe from "./components/AboutMe";
-import ContactMe from "./components/ContactMe";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
     <div className="App">
-      <MainContainer>
-        <Header />
-        <AboutMe />
-        <ContactMe />
-      </MainContainer>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Projects />} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
-
-const MainContainer = styled.div`
-  padding: 32px 32px 0 32px;
-`;

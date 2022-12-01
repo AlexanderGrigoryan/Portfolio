@@ -3,6 +3,9 @@ import burger from "../img/icons/hamburger.svg";
 import close from "../img/icons/close.svg";
 import styled from "styled-components";
 import { useState } from "react";
+import { Route, Routes, Link } from "react-router-dom";
+import Home from "../pages/Home";
+import Projects from "../pages/Projects";
 
 function Header() {
   const [buttonClicked, setButtonClicked] = useState(false);
@@ -19,13 +22,19 @@ function Header() {
       {buttonClicked ? (
         <Menu>
           <MenuList>
-            <Link href="#">HOME</Link>
+            <Link to="/">
+              <Links>HOME</Links>
+            </Link>
           </MenuList>
           <MenuList>
-            <Link href="#">PORTFOLIO</Link>
+            <Link to="/portfolio">
+              <Links>PORTFOLIO</Links>
+            </Link>
           </MenuList>
           <MenuList>
-            <Link href="#">CONTACT ME</Link>
+            <Link href="#">
+              <Links>CONTACT ME</Links>
+            </Link>
           </MenuList>
         </Menu>
       ) : null}
@@ -59,7 +68,7 @@ const Menu = styled.ul`
 `;
 const MenuList = styled.li``;
 
-const Link = styled.a`
+const Links = styled.span`
   color: #ffffff;
   font-size: 12px;
   font-weight: 400;
