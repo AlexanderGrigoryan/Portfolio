@@ -6,7 +6,7 @@
             "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3 and JavaScript for the areas that required interactivity, such as the slider for projects.",
             "image": "/img/portfolio/single-page.jpg",
             "development": "Interaction Design / Front End Development",
-            "technologies": ["HMTL", "CSS", "JS", "React"],
+            "technologies": "HMTL / CSS / JS",
             "url": "https://alexandergrigoryan.github.io/Single-Page-Design-Portfolio/",
             "full-description": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style."
         },
@@ -14,9 +14,9 @@
             "id": 2,
             "name": "Tip Calculator",
             "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS3 and JavaScript for the areas that required interactivity, such as the e-mail validation inputs.",
-            "image": "/img/portfolio/fylo.jpg",
+            "image": "/img/portfolio/tip-calculator.jpg",
             "development": "Interaction Design / Front End Development",
-            "technologies": ["HMTL", "CSS", "JS", "React"],
+            "technologies": "React",
             "url": "https://alexandergrigoryan.github.io/Tip-Calculator-App-with-React/",
             "full-description": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style."
         },
@@ -26,7 +26,7 @@
             "description": "This project required me to build a fully responsive landing page to the designs provided. For this project I used React, also I used here CSS Modules for styles.",
             "image": "/img/portfolio/github-user-search.jpg",
             "development": "Interaction Design / Front End Development",
-            "technologies": ["HMTL", "CSS", "JS", "React"],
+            "technologies": "React",
             "url": "https://alexandergrigoryan.github.io/Github-User-Search-App/",
             "full-description": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style." 
         },
@@ -34,9 +34,9 @@
             "id": 4,
             "name": "Fylo",
             "description": "This project required me to build a fully responsive landing page to the designs provided. For this project I used React, also I used here CSS Modules for styles.",
-            "image": "/img/portfolio/github-user-search.jpg",
+            "image": "/img/portfolio/fylo.jpg",
             "development": "Interaction Design / Front End Development",
-            "technologies": ["HMTL", "CSS", "JS", "React"],
+            "technologies": "HMTL / CSS / JS",
             "url": "https://alexandergrigoryan.github.io/Fylo-Landing-Page/",
             "full-description": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style." 
         }
