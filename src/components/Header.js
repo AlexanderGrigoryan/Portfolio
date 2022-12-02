@@ -30,7 +30,7 @@ function Header() {
             </Link>
           </MenuList>
           <MenuList>
-            <Link href="#">
+            <Link to="/contact-me">
               <Links>CONTACT ME</Links>
             </Link>
           </MenuList>

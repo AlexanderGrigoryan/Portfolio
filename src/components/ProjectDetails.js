@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import data from "../data.json";
 import Line from "./Line";
+import ContactMe from "./ContactMe";
 
 function ProjectDetails(props) {
   const params = useParams();
@@ -24,6 +25,9 @@ function ProjectDetails(props) {
       <FullDescription>{project["full-description"]}</FullDescription>
       <Preview>Static Previews</Preview>
       <Image src={project.image} />
+      <ContactMe>
+        <Title>Interested in doing a project together?</Title>
+      </ContactMe>
     </div>
   );
 }
@@ -98,5 +102,16 @@ const Preview = styled.h2`
   line-height: 42px;
   letter-spacing: -0.2857142984867096px;
   margin: 40px 0;
+  color: #33323d;
+`;
+
+const Title = styled.h2`
+  font-family: Ibarra Real Nova;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.3571428656578064px;
+  text-align: center;
+  margin-top: 64px;
   color: #33323d;
 `;

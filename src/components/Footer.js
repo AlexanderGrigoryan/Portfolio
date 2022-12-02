@@ -22,7 +22,7 @@ function Footer() {
             </Link>
           </MenuList>
           <MenuList>
-            <Link to="#">
+            <Link to="/contact-me">
               <LinkInner>CONTACT ME</LinkInner>
             </Link>
           </MenuList>
