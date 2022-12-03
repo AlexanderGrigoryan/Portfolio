@@ -85,7 +85,10 @@ const SocialLink = styled.a``;
 
 const SocialIcon = styled.img``;
 
-const Form = styled.form``;
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
 
 const Label = styled.label`
   font-size: 13px;
