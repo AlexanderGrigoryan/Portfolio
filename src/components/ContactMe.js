@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function ContactMe(props) {
   return (
     <Container>
       {props.children}
-      <Button>CONTACT ME</Button>
+      <Button>
+        <Link style={{ textDecoration: "none" }} to="/contact-me">
+          CONTACT ME
+        </Link>
+      </Button>
     </Container>
   );
 }

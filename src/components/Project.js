@@ -11,7 +11,10 @@ function Project(props) {
         <Name>{props.name}</Name>
         <Description>{props.description}</Description>
         <Button>
-          <Link style={{ textDecoration: "none" }}>
+          <Link
+            to={"/projects/" + props.name}
+            style={{ textDecoration: "none" }}
+          >
             <LinkInner>View Project</LinkInner>
           </Link>
         </Button>
