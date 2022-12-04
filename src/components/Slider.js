@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import data from "../data.json";
-import Line from "./Line";
 import previousArrow from "../img/icons/arrow-left.svg";
 import nextArrow from "../img/icons/arrow-right.svg";
 import { useParams, useNavigate } from "react-router-dom";
@@ -100,4 +99,11 @@ const FlexLine = styled.div`
   width: 1px;
   height: 146px;
   border: 1px solid rgba(51, 50, 61, 0.15);
+`;
+
+const Line = styled.div`
+  width: 311px;
+  height: 1px;
+  border: 1px solid #33323d;
+  opacity: 0.15;
 `;

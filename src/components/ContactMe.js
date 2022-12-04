@@ -21,6 +21,12 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   row-gap: 40px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
 const Button = styled.button`

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import Line from "./Line";
 
 function Project(props) {
   return (
@@ -66,4 +65,11 @@ const LinkInner = styled.span`
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #33323d;
+`;
+
+const Line = styled.div`
+  width: 311px;
+  height: 1px;
+  border: 1px solid #33323d;
+  opacity: 0.15;
 `;

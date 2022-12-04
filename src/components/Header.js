@@ -3,17 +3,42 @@ import burger from "../img/icons/hamburger.svg";
 import close from "../img/icons/close.svg";
 import styled from "styled-components";
 import { useState } from "react";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes, Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [buttonClicked, setButtonClicked] = useState(false);
+  const [mobile, setMobile] = useState();
 
   function clickHandler() {
     setButtonClicked(!buttonClicked);
   }
+
+  function displayBurger() {}
+
   return (
     <Container>
       <Logo src={logo} alt="logo" />
+      <RespMenu>
+        <RespMenuList>
+          <NavLink
+            to="/"
+            activeClassName="active"
+            style={{ textDecoration: "none" }}
+          >
+            <RespLinks>HOME</RespLinks>
+          </NavLink>
+        </RespMenuList>
+        <RespMenuList>
+          <NavLink to="/portfolio" style={{ textDecoration: "none" }}>
+            <RespLinks>PORTFOLIO</RespLinks>
+          </NavLink>
+        </RespMenuList>
+        <RespMenuList>
+          <NavLink to="/contact-me" style={{ textDecoration: "none" }}>
+            <RespLinks>CONTACT ME</RespLinks>
+          </NavLink>
+        </RespMenuList>
+      </RespMenu>
       <Button onClick={clickHandler}>
         <img src={buttonClicked ? close : burger} alt="Burger" />
       </Button>
@@ -53,6 +78,30 @@ const Logo = styled.img``;
 
 const Button = styled.button`
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const RespMenu = styled.ul`
+  display: none;
+  list-style-type: none;
+  column-gap: 42px;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+`;
+
+const RespMenuList = styled.li``;
+
+const RespLinks = styled.span`
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #33323d;
 `;
 
 const Menu = styled.ul`

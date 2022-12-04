@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Line from "../components/Line";
 import github from "../img/icons/github.svg";
 import twitter from "../img/icons/twitter.svg";
 import linkedin from "../img/icons/linkedin.svg";
@@ -134,4 +133,11 @@ const Button = styled.button`
   text-align: center;
   cursor: pointer;
   color: #ffffff;
+`;
+
+const Line = styled.div`
+  width: 311px;
+  height: 1px;
+  border: 1px solid #33323d;
+  opacity: 0.15;
 `;

@@ -29,4 +29,12 @@ export default App;
 
 const MainContainer = styled.main`
   padding: 32px 32px 0px 32px;
+
+  @media (min-width: 768px) {
+    padding: 64px 40px 0px 40px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 64px 165px 0px 165px;
+  }
 `;

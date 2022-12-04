@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import data from "../data.json";
-import Line from "./Line";
 import ContactMe from "./ContactMe";
 import Slider from "./Slider";
 
@@ -116,4 +115,11 @@ const Title = styled.h2`
   text-align: center;
   margin-top: 64px;
   color: #33323d;
+`;
+
+const Line = styled.div`
+  width: 311px;
+  height: 1px;
+  border: 1px solid #33323d;
+  opacity: 0.15;
 `;
