@@ -3,6 +3,7 @@ import styled from "styled-components";
 import data from "../data.json";
 import Line from "./Line";
 import ContactMe from "./ContactMe";
+import Slider from "./Slider";
 
 function ProjectDetails(props) {
   const params = useParams();
@@ -25,6 +26,7 @@ function ProjectDetails(props) {
       <FullDescription>{project["full-description"]}</FullDescription>
       <Preview>Static Previews</Preview>
       <Image src={project.image} />
+      <Slider />
       <ContactMe>
         <Title>Interested in doing a project together?</Title>
       </ContactMe>
