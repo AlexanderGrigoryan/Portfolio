@@ -51,7 +51,7 @@ export default ProjectDetails;
 const DesctopContainer = styled.div`
   @media (min-width: 1440px) {
     display: flex;
-c    justify-content: space-around;
+    justify-content: space-around;
   }
 `;
 
@@ -145,6 +145,7 @@ const Link = styled.a`
   letter-spacing: 2px;
   text-decoration: none;
   color: #33323d;
+  padding: 16px 31px;
 `;
 
 const BackgroundContainer = styled.div`
