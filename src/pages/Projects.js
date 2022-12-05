@@ -35,4 +35,10 @@ const Title = styled.h2`
   letter-spacing: -0.3571428656578064px;
   margin-top: 8px;
   color: #33323d;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    text-align: left;
+    width: 350px;
+  }
 `;

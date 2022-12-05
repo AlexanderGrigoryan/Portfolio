@@ -26,37 +26,60 @@ function Slider() {
 
   return (
     <>
-      <Line></Line>
-      <Container>
-        <Previous>
-          <PreviousButton onClick={changePreviousProject}>
-            <PreviousArrow src={previousArrow} alt="arrow to left" />
-          </PreviousButton>
-          <ProjectName>{previousProject.name}</ProjectName>
-          <ProjectState>Previous Project</ProjectState>
-        </Previous>
-        <FlexLine></FlexLine>
-        <Next>
-          <NextButton onClick={changeNextProject}>
-            <NextArrow src={nextArrow} alt="arrow to right" />
-          </NextButton>
-          <ProjectName>{nextProject.name}</ProjectName>
-          <ProjectState>Next Project</ProjectState>
-        </Next>
-      </Container>
-      <Line></Line>
+      <SliderContainer>
+        <Line></Line>
+        <Container>
+          <Previous>
+            <PreviousButton onClick={changePreviousProject}>
+              <PreviousArrow src={previousArrow} alt="arrow to left" />
+            </PreviousButton>
+            <PreviousContainer>
+              <ProjectName>{previousProject.name}</ProjectName>
+              <ProjectState>Previous Project</ProjectState>
+            </PreviousContainer>
+          </Previous>
+          <FlexLine></FlexLine>
+          <Next>
+            <NextButton onClick={changeNextProject}>
+              <NextArrow src={nextArrow} alt="arrow to right" />
+            </NextButton>
+            <NextContainer>
+              <ProjectName>{nextProject.name}</ProjectName>
+              <ProjectState>Next Project</ProjectState>
+            </NextContainer>
+          </Next>
+        </Container>
+        <Line></Line>
+      </SliderContainer>
     </>
   );
 }
 
 export default Slider;
 
+const SliderContainer = styled.div`
+  @media (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+`;
+
 const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
-const Previous = styled.div``;
+const Previous = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+  }
+`;
+
+const PreviousContainer = styled.div`
+  @media (min-width: 768px) {
+  }
+`;
 
 const PreviousButton = styled.button`
   cursor: pointer;
@@ -73,6 +96,11 @@ const ProjectName = styled.h2`
   margin-top: 16px;
   align-self: end;
   color: #33323d;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    font-size: 32px;
+  }
 `;
 
 const ProjectState = styled.p`
@@ -86,11 +114,32 @@ const ProjectState = styled.p`
 const Next = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 32px;
+  }
+`;
+
+const NextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    order: 1;
+    align-self: end;
+  }
 `;
 
 const NextButton = styled.button`
   cursor: pointer;
   align-self: end;
+
+  @media (min-width: 768px) {
+    order: 2;
+    align-self: center;
+  }
 `;
 
 const NextArrow = styled.img``;
@@ -102,7 +151,7 @@ const FlexLine = styled.div`
 `;
 
 const Line = styled.div`
-  width: 311px;
+  width: 100%;
   height: 1px;
   border: 1px solid #33323d;
   opacity: 0.15;
