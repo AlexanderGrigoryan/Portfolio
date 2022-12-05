@@ -146,6 +146,12 @@ const Link = styled.a`
   text-decoration: none;
   color: #33323d;
   padding: 16px 31px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    font-weight: 700;
+    background: #f8eded;
+  }
 `;
 
 const BackgroundContainer = styled.div`

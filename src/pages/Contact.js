@@ -184,6 +184,12 @@ const Button = styled.button`
   text-align: center;
   cursor: pointer;
   color: #ffffff;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #244b67;
+    font-weight: 700;
+  }
 `;
 
 const Line = styled.div`

@@ -42,7 +42,7 @@ function AboutMe() {
           </Text>
           <PortfolioButton>
             <Link style={{ textDecoration: "none" }} to="/portfolio">
-              GO TO PORTFOLIO
+              <LinkText>GO TO PORTFOLIO</LinkText>
             </Link>
           </PortfolioButton>
           <Line></Line>
@@ -131,6 +131,7 @@ const BlackButton = styled.button`
   transition: all 0.3s ease;
   &:hover {
     background: #244b67;
+    font-weight: 700;
   }
 
   @media (min-width: 768px) {
@@ -220,19 +221,25 @@ const PortfolioButton = styled.button`
   border: 1px solid #33323d;
   background: #f2f2f2;
   cursor: pointer;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 2px;
   margin: 24px 0 51px;
   align-self: baseline;
   transition: all 0.3s ease;
-  :hover {
+  &:hover {
     background: #f8eded;
+    font-weight: 700;
   }
 
   @media (min-width: 768px) {
     margin: 24px 0 56px;
   }
+`;
+
+const LinkText = styled.span`
+  padding: 16px 28px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #33323d;
 `;
 
 const Line = styled.div`
