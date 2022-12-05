@@ -24,4 +24,10 @@ const Title = styled.h2`
   text-align: center;
   margin-top: 115px;
   color: #33323d;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    text-align: left;
+    width: 350px;
+  }
 `;

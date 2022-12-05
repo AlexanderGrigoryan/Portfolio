@@ -58,6 +58,16 @@ const Container = styled.div`
   padding: 56px 0;
   margin-top: 80px;
   background: #33323d;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 24px 40px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 24px 165px;
+  }
 `;
 
 const FooterContainer = styled.div`
@@ -66,6 +76,11 @@ const FooterContainer = styled.div`
   align-items: center;
   justify-content: center;
   row-gap: 40px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    column-gap: 49px;
+  }
 `;
 
 const Logo = styled.img``;
@@ -87,6 +102,11 @@ const Menu = styled.ul`
   display: flex;
   flex-direction: column;
   row-gap: 32px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    column-gap: 42px;
+  }
 `;
 
 const MenuList = styled.li``;
@@ -95,6 +115,10 @@ const Social = styled.div`
   display: flex;
   column-gap: 15px;
   margin-top: 40px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
 `;
 
 const SocialLink = styled.a``;
