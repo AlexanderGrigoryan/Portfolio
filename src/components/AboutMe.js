@@ -101,6 +101,13 @@ const InfoContainer = styled.div`
     height: 278px;
     background: #fafafa;
     padding: 56px 56px 0 0;
+    align-self: baseline;
+    margin-top: -278px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 445px;
+    height: 357px;
   }
 `;
 

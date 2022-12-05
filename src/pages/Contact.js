@@ -37,9 +37,9 @@ function Contact() {
               <SocialIcon src={linkedin} alt="linkedin" />
             </SocialLink>
           </Social>
-          <Line></Line>
         </InfoContainer>
       </ContactContainer>
+      <Line></Line>
       <FormContainer>
         <Title>Contact Me</Title>
         <Form>
@@ -71,7 +71,7 @@ const Container = styled.div`
 const ContactContainer = styled.div`
   @media (min-width: 1440px) {
     display: flex;
-    column-gap: 125px;
+    justify-content: space-between;
   }
 `;
 
@@ -83,23 +83,30 @@ const Title = styled.h2`
   font-weight: 700;
   line-height: 42px;
   letter-spacing: -0.3571428656578064px;
+  margin-bottom: 32px;
   color: #33323d;
 
   @media (min-width: 1440px) {
-    width: 350px;
+    margin-bottom: 0;
   }
 `;
 
 const Info = styled.p`
   font-size: 15px;
   line-height: 30px;
+  margin: 24px 0;
   color: #33323d;
+
+  @media (min-width: 1440px) {
+    margin: 0 0 24px 0;
+    width: 635px;
+  }
 `;
 
 const Social = styled.div`
   display: flex;
   column-gap: 15px;
-  margin-bottom: 6px;
+  }
 `;
 
 const SocialLink = styled.a``;
@@ -109,7 +116,8 @@ const SocialIcon = styled.img``;
 const FormContainer = styled.div`
   @media (min-width: 1440px) {
     display: flex;
-    column-gap: 125px;
+    justify-content: space-between;
+    width: 100%;
   }
 `;
 
@@ -118,7 +126,7 @@ const Form = styled.form`
   flex-direction: column;
 
   @media (min-width: 1440px) {
-    width: 100%;
+    width: 635px;
   }
 `;
 

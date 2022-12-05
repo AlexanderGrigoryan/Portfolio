@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function Project(props) {
   return (
-    <div>
-      <Container>
-        <Image src={props.image} alt="Project Image" />
+    <Container style={props.style}>
+      <Image src={props.image} alt="Project Image" />
+      <ProjectContainer>
         <Line></Line>
         <Name>{props.name}</Name>
         <Description>{props.description}</Description>
@@ -18,8 +18,8 @@ function Project(props) {
           </Link>
         </Button>
         <Line></Line>
-      </Container>
-    </div>
+      </ProjectContainer>
+    </Container>
   );
 }
 
@@ -32,8 +32,14 @@ const Container = styled.div`
   margin-bottom: 72px;
 `;
 
+const ProjectContainer = styled.div``;
+
 const Image = styled.img`
   width: 100%;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 `;
 
 const Name = styled.h2`

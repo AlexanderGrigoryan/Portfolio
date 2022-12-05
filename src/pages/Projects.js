@@ -7,9 +7,10 @@ import data from "../data.json";
 function Projects() {
   return (
     <div>
-      {data.projects.map((item) => {
+      {data.projects.map((item, index) => {
         return (
           <Project
+            style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}
             image={item.image}
             name={item.name}
             description={item.description}
