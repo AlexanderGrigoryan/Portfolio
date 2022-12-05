@@ -71,7 +71,7 @@ const Container = styled.div`
 const ContactContainer = styled.div`
   @media (min-width: 1440px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 `;
 
@@ -116,7 +116,7 @@ const SocialIcon = styled.img``;
 const FormContainer = styled.div`
   @media (min-width: 1440px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
   }
 `;

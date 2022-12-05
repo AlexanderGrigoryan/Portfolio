@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Project(props) {
   return (
-    <Container style={props.style}>
+    <Container direction={props.direction}>
       <Image src={props.image} alt="Project Image" />
       <ProjectContainer>
         <Line></Line>
@@ -30,9 +30,28 @@ const Container = styled.div`
   flex-direction: column;
   row-gap: 24px;
   margin-bottom: 72px;
+
+  @media (min-width: 768px) {
+    flex-direction: ${(props) => (props.direction ? "row" : "row-reverse")};
+    column-gap: 69px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: 1440px) {
+  }
 `;
 
-const ProjectContainer = styled.div``;
+const ProjectContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  @media (min-width: 768px) {
+    width: 40%;
+    align-items: center;
+    row-gap: 32px;
+  }
+`;
 
 const Image = styled.img`
   width: 100%;
@@ -49,6 +68,10 @@ const Name = styled.h2`
   line-height: 42px;
   letter-spacing: -0.3571428656578064px;
   color: #33323d;
+
+  @media (min-width: 1440px) {
+    margin-top: 71px;
+  }
 `;
 
 const Description = styled.p`
@@ -63,6 +86,10 @@ const Button = styled.button`
   border: 1px solid #33323d;
   cursor: pointer;
   background: #f2f2f2;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 71px;
+  }
 `;
 
 const LinkInner = styled.span`
@@ -74,7 +101,7 @@ const LinkInner = styled.span`
 `;
 
 const Line = styled.div`
-  width: 311px;
+  width: 100%;
   height: 1px;
   border: 1px solid #33323d;
   opacity: 0.15;

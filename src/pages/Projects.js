@@ -10,7 +10,7 @@ function Projects() {
       {data.projects.map((item, index) => {
         return (
           <Project
-            style={{ flexDirection: index % 2 === 0 ? "row" : "row-reverse" }}
+            direction={index % 2 === 0}
             image={item.image}
             name={item.name}
             description={item.description}
@@ -27,12 +27,12 @@ function Projects() {
 export default Projects;
 
 const Title = styled.h2`
+  width: 350px;
   font-family: Ibarra Real Nova;
   font-size: 40px;
   font-weight: 700;
   line-height: 42px;
   letter-spacing: -0.3571428656578064px;
-  text-align: center;
   margin-top: 8px;
   color: #33323d;
 `;
