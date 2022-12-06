@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -7,11 +7,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectDetails from "./components/ProjectDetails";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <MainContainer>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

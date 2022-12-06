@@ -119,18 +119,21 @@ const DescriptionTab = styled.p`
     display: none;
   }
 `;
+
 const Development = styled.p`
   font-size: 13px;
   font-weight: 700;
   line-height: 30px;
   color: #5fb4a2;
 `;
+
 const Technologies = styled.p`
   font-size: 13px;
   font-weight: 700;
   line-height: 30px;
   color: #5fb4a2;
 `;
+
 const Button = styled.button`
   width: 178px;
   height: 48px;
@@ -182,11 +185,13 @@ const ProjectBackground = styled.h2`
     margin: 24px 0;
   }
 `;
+
 const FullDescription = styled.p`
   font-size: 15px;
   line-height: 30px;
   color: #33323d;
 `;
+
 const Preview = styled.h2`
   font-family: Ibarra Real Nova;
   font-size: 32px;

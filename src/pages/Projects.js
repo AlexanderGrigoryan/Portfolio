@@ -1,4 +1,3 @@
-import { Route, Routes, Link } from "react-router-dom";
 import styled from "styled-components";
 import Project from "../components/Project";
 import ContactMe from "../components/ContactMe";
@@ -10,7 +9,8 @@ function Projects() {
       {data.projects.map((item, index) => {
         return (
           <Project
-            direction={index % 2 === 0}
+            key={Math.random()}
+            direction={index}
             image={item.image}
             name={item.name}
             description={item.description}

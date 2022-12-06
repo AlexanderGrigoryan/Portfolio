@@ -32,7 +32,8 @@ const Container = styled.div`
   margin-bottom: 72px;
 
   @media (min-width: 768px) {
-    flex-direction: ${(props) => (props.direction ? "row" : "row-reverse")};
+    flex-direction: ${(props) =>
+      props.direction % 2 === 0 ? "row" : "row-reverse"};
     column-gap: 69px;
     margin-bottom: 80px;
   }
