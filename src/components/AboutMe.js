@@ -7,6 +7,7 @@ import greenarrows from "../img/icons/down-arrows.svg";
 import profile from "../img/homepage/mobile/profile.jpg";
 import profileTablet from "../img/homepage/tablet/profile-tablet.jpg";
 import profileDesctop from "../img/homepage/desktop/profile-desctop.jpg";
+
 function AboutMe() {
   return (
     <Container>
@@ -15,14 +16,16 @@ function AboutMe() {
       <ImageDesc src={projectImageDesctop} alt="image" />
       <InfoContainer>
         <Info>
-          Hey, I’m Alex Grigoryan and I love building beautiful websites
+          Hey, I’m Alexander Grigoryan and I love building beautiful websites
         </Info>
         <BlackButton>
           <GreenArrows src={greenarrows} alt="green arrows" />
-          <BlackButtonText>ABOUT ME</BlackButtonText>
+          <BlackButtonText style={{ textDecoration: "none" }} href="#about-me">
+            ABOUT ME
+          </BlackButtonText>
         </BlackButton>
       </InfoContainer>
-      <ProfileContainer>
+      <ProfileContainer id="about-me">
         <ProfileImage src={profile} alt="profile" />
         <ProfileTablet src={profileTablet} alt="profile" />
         <ProfileDesctop src={profileDesctop} alt="profile" />
@@ -42,7 +45,7 @@ function AboutMe() {
           </Text>
           <PortfolioButton>
             <Link style={{ textDecoration: "none" }} to="/portfolio">
-              GO TO PORTFOLIO
+              <LinkText>GO TO PORTFOLIO</LinkText>
             </Link>
           </PortfolioButton>
           <Line></Line>
@@ -131,6 +134,7 @@ const BlackButton = styled.button`
   transition: all 0.3s ease;
   &:hover {
     background: #244b67;
+    font-weight: 700;
   }
 
   @media (min-width: 768px) {
@@ -142,7 +146,7 @@ const GreenArrows = styled.img`
   padding: 0 50px 0 16px;
 `;
 
-const BlackButtonText = styled.p`
+const BlackButtonText = styled.a`
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 2px;
@@ -220,19 +224,25 @@ const PortfolioButton = styled.button`
   border: 1px solid #33323d;
   background: #f2f2f2;
   cursor: pointer;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 2px;
   margin: 24px 0 51px;
   align-self: baseline;
   transition: all 0.3s ease;
-  :hover {
+  &:hover {
     background: #f8eded;
+    font-weight: 700;
   }
 
   @media (min-width: 768px) {
     margin: 24px 0 56px;
   }
+`;
+
+const LinkText = styled.span`
+  padding: 16px 28px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #33323d;
 `;
 
 const Line = styled.div`

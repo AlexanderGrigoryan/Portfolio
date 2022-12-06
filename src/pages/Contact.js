@@ -43,11 +43,11 @@ function Contact() {
       <FormContainer>
         <Title>Contact Me</Title>
         <Form>
-          <Label for="name">Name</Label>
+          <Label htmlFor="name">Name</Label>
           <Input type="text" id="name" placeholder="Enter your name" />
-          <Label for="email">Email Adress</Label>
+          <Label htmlFor="email">Email Adress</Label>
           <Input type="email" id="email" placeholder="email@example.com" />
-          <Label for="message">Message</Label>
+          <Label htmlFor="message">Message</Label>
           <TextArea type="text" id="message" placeholder="How can I help?" />
           <Button type="submit">SEND MESSAGE</Button>
         </Form>
@@ -184,6 +184,12 @@ const Button = styled.button`
   text-align: center;
   cursor: pointer;
   color: #ffffff;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #244b67;
+    font-weight: 700;
+  }
 `;
 
 const Line = styled.div`

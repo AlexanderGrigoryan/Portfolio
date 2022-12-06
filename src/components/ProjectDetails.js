@@ -119,18 +119,21 @@ const DescriptionTab = styled.p`
     display: none;
   }
 `;
+
 const Development = styled.p`
   font-size: 13px;
   font-weight: 700;
   line-height: 30px;
   color: #5fb4a2;
 `;
+
 const Technologies = styled.p`
   font-size: 13px;
   font-weight: 700;
   line-height: 30px;
   color: #5fb4a2;
 `;
+
 const Button = styled.button`
   width: 178px;
   height: 48px;
@@ -146,6 +149,12 @@ const Link = styled.a`
   text-decoration: none;
   color: #33323d;
   padding: 16px 31px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    font-weight: 700;
+    background: #f8eded;
+  }
 `;
 
 const BackgroundContainer = styled.div`
@@ -176,11 +185,13 @@ const ProjectBackground = styled.h2`
     margin: 24px 0;
   }
 `;
+
 const FullDescription = styled.p`
   font-size: 15px;
   line-height: 30px;
   color: #33323d;
 `;
+
 const Preview = styled.h2`
   font-family: Ibarra Real Nova;
   font-size: 32px;

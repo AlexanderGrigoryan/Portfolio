@@ -3,39 +3,58 @@ import burger from "../img/icons/hamburger.svg";
 import close from "../img/icons/close.svg";
 import styled from "styled-components";
 import { useState } from "react";
-import { Route, Routes, Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 function Header() {
   const [buttonClicked, setButtonClicked] = useState(false);
-  const [mobile, setMobile] = useState();
+  const location = useLocation();
 
   function clickHandler() {
     setButtonClicked(!buttonClicked);
   }
-
-  function displayBurger() {}
 
   return (
     <Container>
       <Logo src={logo} alt="logo" />
       <RespMenu>
         <RespMenuList>
-          <NavLink
-            to="/"
-            activeClassName="active"
-            style={{ textDecoration: "none" }}
-          >
-            <RespLinks>HOME</RespLinks>
+          <NavLink to="/" style={{ textDecoration: "none" }}>
+            <RespLinks
+              style={{
+                color: location.pathname === "/" ? "#5FB4A2" : "#33323D",
+              }}
+            >
+              HOME
+            </RespLinks>
           </NavLink>
         </RespMenuList>
         <RespMenuList>
           <NavLink to="/portfolio" style={{ textDecoration: "none" }}>
-            <RespLinks>PORTFOLIO</RespLinks>
+            <RespLinks
+              style={{
+                color:
+                  location.pathname === "/portfolio" ? "#5FB4A2" : "#33323D",
+              }}
+            >
+              PORTFOLIO
+            </RespLinks>
           </NavLink>
         </RespMenuList>
         <RespMenuList>
-          <NavLink to="/contact-me" style={{ textDecoration: "none" }}>
-            <RespLinks>CONTACT ME</RespLinks>
+          <NavLink
+            to="/contact-me"
+            style={{
+              textDecoration: "none",
+            }}
+          >
+            <RespLinks
+              style={{
+                color:
+                  location.pathname === "/contact-me" ? "#5FB4A2" : "#33323D",
+              }}
+            >
+              CONTACT ME
+            </RespLinks>
           </NavLink>
         </RespMenuList>
       </RespMenu>
@@ -102,6 +121,10 @@ const RespLinks = styled.span`
   letter-spacing: 2px;
   text-decoration: none;
   color: #33323d;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const Menu = styled.ul`

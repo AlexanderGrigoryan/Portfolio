@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logoWhite from "../img/logo-white.svg";
 import github from "../img/icons/footer-github.svg";
 import twitter from "../img/icons/footer-twitter.svg";
 import linkedin from "../img/icons/footer-linkedin.svg";
 
 function Footer() {
+  const location = useLocation();
   return (
     <Container>
       <FooterContainer>
@@ -13,17 +14,37 @@ function Footer() {
         <Menu>
           <MenuList>
             <Link to="/">
-              <LinkInner>HOME</LinkInner>
+              <LinkInner
+                style={{
+                  color: location.pathname === "/" ? "#5FB4A2" : "#ffffff",
+                }}
+              >
+                HOME
+              </LinkInner>
             </Link>
           </MenuList>
           <MenuList>
             <Link to="/portfolio">
-              <LinkInner>PORTFOLIO</LinkInner>
+              <LinkInner
+                style={{
+                  color:
+                    location.pathname === "/portfolio" ? "#5FB4A2" : "#ffffff",
+                }}
+              >
+                PORTFOLIO
+              </LinkInner>
             </Link>
           </MenuList>
           <MenuList>
             <Link to="/contact-me">
-              <LinkInner>CONTACT ME</LinkInner>
+              <LinkInner
+                style={{
+                  color:
+                    location.pathname === "/contact-me" ? "#5FB4A2" : "#ffffff",
+                }}
+              >
+                CONTACT ME
+              </LinkInner>
             </Link>
           </MenuList>
         </Menu>

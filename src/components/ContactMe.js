@@ -7,7 +7,7 @@ function ContactMe(props) {
       {props.children}
       <Button>
         <Link style={{ textDecoration: "none" }} to="/contact-me">
-          CONTACT ME
+          <LinkText>CONTACT ME</LinkText>
         </Link>
       </Button>
     </Container>
@@ -34,12 +34,18 @@ const Button = styled.button`
   height: 48px;
   border: 1px solid #33323d;
   background: #f2f2f2;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
     background: #f8eded;
+    font-weight: 700;
   }
+`;
+
+const LinkText = styled.span`
+  padding: 16px 30px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #33323d;
 `;

@@ -32,7 +32,8 @@ const Container = styled.div`
   margin-bottom: 72px;
 
   @media (min-width: 768px) {
-    flex-direction: ${(props) => (props.direction ? "row" : "row-reverse")};
+    flex-direction: ${(props) =>
+      props.direction % 2 === 0 ? "row" : "row-reverse"};
     column-gap: 69px;
     margin-bottom: 80px;
   }
@@ -87,6 +88,11 @@ const Button = styled.button`
   cursor: pointer;
   background: #f2f2f2;
 
+  &:hover {
+    background: #f8eded;
+    font-weight: 700;
+  }
+
   @media (min-width: 1440px) {
     margin-bottom: 71px;
   }
@@ -98,6 +104,7 @@ const LinkInner = styled.span`
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #33323d;
+  padding: 16px 29px;
 `;
 
 const Line = styled.div`
