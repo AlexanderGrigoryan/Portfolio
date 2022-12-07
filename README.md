@@ -25,7 +25,7 @@
 ### Tech Stack
 
 - <img src="readme/react.png" width="25" style="top: 8px" /> _React @ 18.2.0 - front-end framework_
-- <img src="redme/styled-components.png" width="25" style="top: 8px"/> _Styled-components @ 5.3.6 - for styles_
+- <img src="readme/styled-components.png" width="25" style="top: 8px"/> _Styled-components @ 5.3.6 - for styles_
 - <img src="readme/react-router.png" width="25" style="top: 8px" /> _React-router @6.3.0 - library for routing_
 
 #
